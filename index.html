@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quize App</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+    <div class="quizApp">
+        <div id="welcomeScreen">
+            <div class="user">
+            <img class="logo" src="/image/logo.png" alt="Logo" class="logo">
+            <h1>Hello user!</h1>
+            <h2>Enter your name to continue Quiz.</h2>
+        </div>
+            <div class="input">
+
+                <input class="inp" type="text" id="username" name="username"  placeholder="ENTER YOUR NAME" />
+                <button>Enter</button>
+            </div>
+
+            <div class="description">
+                <p>You'll have 10 second to answer each question</p>
+            </div>
+            <hr>
+            <div class="secp">
+                <h1>Select Category</h1>
+
+                <div class="categorySelection">
+                   
+                    <button class="btn_bt" onclick="selectCategory('Pipes and Cisterns')">Pipes and Cisterns</button>
+                    <button class="btn_bt" onclick="selectCategory('Probability')">Probability</button>
+                    <button class="btn_bt" onclick="selectCategory('Problems on Ages')">Problems on Ages</button>
+                    <button class="btn_bt" onclick="selectCategory('Profit and Loss')">Profit and Loss</button>
+                    <button class="btn_bt" onclick="selectCategory('Cricket Trivia')">Cricket Trivia</button>
+                    <button class="btn_bt" onclick="selectCategory('Bollywood Trivia')">Bollywood Trivia</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div id="quizContainer" style="display: none;">
+        <div id="timer">Time: 10s</div>
+        <div id="question"></div>
+        <ol class="answers">
+            <li><button class="answer"></button></li>
+            <li><button class="answer"></button></li>
+            <li><button class="answer"></button></li>
+            <li><button class="answer"></button></li>
+        </ol>
+        <button id="next-btn" style="display: none;" onclick="nextQuestion()">Next Question</button>
+    </div>
+    <div id="score" style="display: none;"></div>
+    </div>
+    <script src="quiz1.js"></script>
+</body>
+
+</html>

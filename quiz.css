@@ -1,0 +1,112 @@
+/* quiz.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: gray;
+}
+.question-container , .question-score{
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: white;  
+   margin-right: 35%;
+    
+}
+#timer{
+background-color: aqua;
+width: 60px;
+border-radius: 5px;
+font-size: 16px;
+padding: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.quizApp {
+    text-align: center;
+    width: 800px;
+    
+}
+
+#welcomeScreen {
+    max-width: 700px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: white;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+h1{
+    color: rgb(22, 180, 175);
+}
+.input {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Centering input and button */
+    align-items: center;
+}
+
+.input .inp {
+    padding: 10px;
+    margin-right: 10px; /* Space between input and button */
+    flex: 1; /* Make input field flexible */
+    border: 1px solid #007bff; /* Blue border */
+    border-radius: 4px;
+}
+p{
+    color: rgba(21, 19, 19, 0.898);
+}
+button {
+    background-color: #007bff; /* Blue */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+.btn_bt{
+    border: 1px solid rgb(27, 135, 131) ;
+    color:gray;
+    background-color: rgb(180, 234, 232);
+}
+.btn_bt:hover{
+    background-color: rgb(62, 170, 166);
+}
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.description {
+    margin-top: 20px;
+}
+
+
+.quizContainer{
+    max-width: 700px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: white;
+}
